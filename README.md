@@ -118,6 +118,20 @@ console.log( out );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/array/to-json`][@stdlib/array/to-json]: return a JSON representation of a typed array.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -175,7 +189,11 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-reviver/main/LICENSE
 
+<!-- <related-links> -->
+
 [@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
+
+<!-- </related-links> -->
 
 </section>
 
