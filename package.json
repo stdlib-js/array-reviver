@@ -37,6 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-complex128": "^0.0.x",
+    "@stdlib/array-complex64": "^0.0.x",
     "@stdlib/array-float32": "^0.0.x",
     "@stdlib/array-float64": "^0.0.x",
     "@stdlib/array-int16": "^0.0.x",
@@ -51,6 +53,10 @@
   "devDependencies": {
     "@stdlib/array-to-json": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
+    "@stdlib/complex-imag": "^0.0.x",
+    "@stdlib/complex-imagf": "^0.0.x",
+    "@stdlib/complex-real": "^0.0.x",
+    "@stdlib/complex-realf": "^0.0.x",
     "@stdlib/random-base-randu": "^0.0.x",
     "@stdlib/utils-copy": "^0.0.x",
     "@stdlib/utils-parse-json": "^0.0.x",
