@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/array-reviver",
+  "version": "0.0.0",
+  "description": "Revive a JSON-serialized typed array.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/array-reviver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "typed",
+    "array",
+    "typed-array",
+    "typed array",
+    "json",
+    "reviver",
+    "revive",
+    "unmarshal",
+    "deserialize",
+    "from",
+    "convert",
+    "parse",
+    "object",
+    "obj"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
