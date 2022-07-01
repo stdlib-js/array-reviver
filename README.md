@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-reviver
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reviver from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/index.mjs';
+var reviver = require( '@stdlib/array-reviver' );
 ```
 
 #### reviver( key, value )
@@ -49,7 +65,7 @@ import reviver from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/ind
 Revives a JSON-serialized typed array.
 
 ```javascript
-import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
+var parseJSON = require( '@stdlib/utils-parse-json' );
 
 var str = '{"type":"Float64Array","data":[5,3]}';
 
@@ -79,16 +95,11 @@ For details on the JSON serialization format, see [`toJSON()`][@stdlib/array/to-
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
-import toJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-json@esm/index.mjs';
-import reviver from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/index.mjs';
+```javascript
+var Float64Array = require( '@stdlib/array-float64' );
+var parseJSON = require( '@stdlib/utils-parse-json' );
+var toJSON = require( '@stdlib/array-to-json' );
+var reviver = require( '@stdlib/array-reviver' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
 var str = JSON.stringify( toJSON( arr ) );
@@ -101,10 +112,6 @@ if ( out instanceof Error ) {
 }
 console.log( out );
 // => <Float64Array>[ 5.0, 3.0 ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -142,7 +149,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -198,12 +205,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/array-reviver/tree/deno
 [umd-url]: https://github.com/stdlib-js/array-reviver/tree/umd
 [esm-url]: https://github.com/stdlib-js/array-reviver/tree/esm
+[branches-url]: https://github.com/stdlib-js/array-reviver/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-reviver/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json/tree/esm
+[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
 
 <!-- </related-links> -->
 
