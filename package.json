@@ -57,7 +57,6 @@
     "@stdlib/complex-imagf": "^0.0.x",
     "@stdlib/complex-real": "^0.0.x",
     "@stdlib/complex-realf": "^0.0.x",
-    "@stdlib/random-base-randu": "^0.0.x",
     "@stdlib/utils-copy": "^0.0.x",
     "@stdlib/utils-parse-json": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",

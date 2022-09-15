@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Reviver
+# reviveTypedArray
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -57,10 +57,10 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 ## Usage
 
 ```javascript
-var reviver = require( '@stdlib/array-reviver' );
+var reviveTypedArray = require( '@stdlib/array-reviver' );
 ```
 
-#### reviver( key, value )
+#### reviveTypedArray( key, value )
 
 Revives a JSON-serialized typed array.
 
@@ -69,11 +69,11 @@ var parseJSON = require( '@stdlib/utils-parse-json' );
 
 var str = '{"type":"Float64Array","data":[5,3]}';
 
-var arr = parseJSON( str, reviver );
+var arr = parseJSON( str, reviveTypedArray );
 // returns <Float64Array>[ 5.0, 3.0 ]
 ```
 
-For details on the JSON serialization format, see [`toJSON()`][@stdlib/array/to-json].
+For details on the JSON serialization format, see [`@stdlib/array/to-json`][@stdlib/array/to-json].
 
 </section>
 
@@ -98,15 +98,14 @@ For details on the JSON serialization format, see [`toJSON()`][@stdlib/array/to-
 ```javascript
 var Float64Array = require( '@stdlib/array-float64' );
 var parseJSON = require( '@stdlib/utils-parse-json' );
-var toJSON = require( '@stdlib/array-to-json' );
-var reviver = require( '@stdlib/array-reviver' );
+var typedarray2json = require( '@stdlib/array-to-json' );
+var reviveTypedArray = require( '@stdlib/array-reviver' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
-var str = JSON.stringify( toJSON( arr ) );
-console.log( str );
-// => '{"type":"Float64Array","data":[5,3]}'
+var str = JSON.stringify( typedarray2json( arr ) );
+// returns '{"type":"Float64Array","data":[5,3]}'
 
-var out = parseJSON( str, reviver );
+var out = parseJSON( str, reviveTypedArray );
 if ( out instanceof Error ) {
     throw out;
 }
@@ -209,11 +208,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-reviver/main/LICENSE
 
-<!-- <related-links> -->
-
 [@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
-
-<!-- </related-links> -->
 
 </section>
 
