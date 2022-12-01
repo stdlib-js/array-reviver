@@ -48,7 +48,8 @@
     "@stdlib/array-uint32": "^0.0.x",
     "@stdlib/array-uint8": "^0.0.x",
     "@stdlib/array-uint8c": "^0.0.x",
-    "@stdlib/assert-is-array": "^0.0.x"
+    "@stdlib/assert-is-array": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/array-to-json": "^0.0.x",
