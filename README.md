@@ -73,7 +73,7 @@ var arr = parseJSON( str, reviveTypedArray );
 // returns <Float64Array>[ 5.0, 3.0 ]
 ```
 
-For details on the JSON serialization format, see [`@stdlib/array/to-json`][@stdlib/array/to-json].
+For details on the JSON serialization format, see [`@stdlib/array-to-json`][@stdlib/array/to-json].
 
 </section>
 
@@ -133,7 +133,7 @@ console.log( out );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/to-json`][@stdlib/array/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a typed array.</span>
+-   <span class="package-name">[`@stdlib/array-to-json`][@stdlib/array/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a typed array.</span>
 
 </section>
 
@@ -192,7 +192,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
