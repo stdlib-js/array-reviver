@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-reviver
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@deno/mod.js';
+var reviveTypedArray = require( '@stdlib/array-reviver' );
 ```
 
 #### reviveTypedArray( key, value )
@@ -49,7 +65,7 @@ import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-revive
 Revives a JSON-serialized typed array.
 
 ```javascript
-import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@deno/mod.js';
+var parseJSON = require( '@stdlib/utils-parse-json' );
 
 var str = '{"type":"Float64Array","data":[5,3]}';
 
@@ -57,7 +73,7 @@ var arr = parseJSON( str, reviveTypedArray );
 // returns <Float64Array>[ 5.0, 3.0 ]
 ```
 
-For details on the JSON serialization format, see [`@stdlib/array/to-json`][@stdlib/array/to-json].
+For details on the JSON serialization format, see [`@stdlib/array-to-json`][@stdlib/array/to-json].
 
 </section>
 
@@ -80,10 +96,10 @@ For details on the JSON serialization format, see [`@stdlib/array/to-json`][@std
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@deno/mod.js';
-import typedarray2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-json@deno/mod.js';
-import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var parseJSON = require( '@stdlib/utils-parse-json' );
+var typedarray2json = require( '@stdlib/array-to-json' );
+var reviveTypedArray = require( '@stdlib/array-reviver' );
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
 var str = JSON.stringify( typedarray2json( arr ) );
@@ -117,7 +133,7 @@ console.log( out );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/to-json`][@stdlib/array/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a typed array.</span>
+-   <span class="package-name">[`@stdlib/array-to-json`][@stdlib/array/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a typed array.</span>
 
 </section>
 
@@ -132,7 +148,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -176,7 +192,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -192,7 +208,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-reviver/main/LICENSE
 
-[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json/tree/deno
+[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
 
 </section>
 
