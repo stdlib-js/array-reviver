@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/index.mjs';
+import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@v0.3.1-esm/index.mjs';
 ```
 
 #### reviveTypedArray( key, value )
@@ -99,7 +99,7 @@ For details on the JSON serialization format, see [`@stdlib/array-to-json`][@std
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
 import typedarray2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-json@esm/index.mjs';
-import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/index.mjs';
+import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@v0.3.1-esm/index.mjs';
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
 var str = JSON.stringify( typedarray2json( arr ) );
