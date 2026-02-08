@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-reviver/tags). For example,
+
+```javascript
 import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@v0.3.1-esm/index.mjs';
 ```
 
@@ -99,7 +104,7 @@ For details on the JSON serialization format, see [`@stdlib/array-to-json`][@std
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
 import typedarray2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-json@esm/index.mjs';
-import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@v0.3.1-esm/index.mjs';
+import reviveTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-reviver@esm/index.mjs';
 
 var arr = new Float64Array( [ 5.0, 3.0 ] );
 var str = JSON.stringify( typedarray2json( arr ) );
