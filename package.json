@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-reviver",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Revive a JSON-serialized typed array.",
   "license": "Apache-2.0",
   "author": {
@@ -37,32 +37,32 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-bool": "^0.1.0",
-    "@stdlib/array-complex128": "^0.3.0",
-    "@stdlib/array-complex64": "^0.3.0",
-    "@stdlib/array-float32": "^0.2.2",
-    "@stdlib/array-float64": "^0.2.2",
-    "@stdlib/array-int16": "^0.2.2",
-    "@stdlib/array-int32": "^0.2.2",
-    "@stdlib/array-int8": "^0.2.2",
-    "@stdlib/array-uint16": "^0.2.2",
-    "@stdlib/array-uint32": "^0.2.2",
-    "@stdlib/array-uint8": "^0.2.2",
-    "@stdlib/array-uint8c": "^0.2.2",
-    "@stdlib/assert-is-array": "^0.2.2"
+    "@stdlib/array-bool": "^0.1.1",
+    "@stdlib/array-complex128": "^0.3.1",
+    "@stdlib/array-complex64": "^0.3.1",
+    "@stdlib/array-float32": "^0.2.3",
+    "@stdlib/array-float64": "^0.2.3",
+    "@stdlib/array-int16": "^0.2.3",
+    "@stdlib/array-int32": "^0.2.3",
+    "@stdlib/array-int8": "^0.2.3",
+    "@stdlib/array-uint16": "^0.2.3",
+    "@stdlib/array-uint32": "^0.2.3",
+    "@stdlib/array-uint8": "^0.2.3",
+    "@stdlib/array-uint8c": "^0.2.3",
+    "@stdlib/assert-is-array": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-to-json": "^0.3.0",
-    "@stdlib/complex-float32-imag": "^0.1.1",
-    "@stdlib/complex-float32-real": "^0.1.1",
-    "@stdlib/complex-float64-imag": "^0.1.1",
-    "@stdlib/complex-float64-real": "^0.1.1",
-    "@stdlib/utils-copy": "^0.2.2",
-    "@stdlib/utils-parse-json": "^0.2.2",
+    "@stdlib/array-to-json": "^0.3.1",
+    "@stdlib/complex-float32-imag": "^0.1.2",
+    "@stdlib/complex-float32-real": "^0.1.2",
+    "@stdlib/complex-float64-imag": "^0.1.2",
+    "@stdlib/complex-float64-real": "^0.1.2",
+    "@stdlib/utils-copy": "^0.2.3",
+    "@stdlib/utils-parse-json": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
