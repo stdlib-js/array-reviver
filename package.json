@@ -57,6 +57,7 @@
     "@stdlib/complex-float32-real": "^0.1.2",
     "@stdlib/complex-float64-imag": "^0.1.2",
     "@stdlib/complex-float64-real": "^0.1.2",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/utils-copy": "^0.2.3",
     "@stdlib/utils-parse-json": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
